@@ -1,3 +1,9 @@
+:root {
+  --clr-primary-300: hsl(224, 95%, 91%);
+  --fw-regular: 500;
+  --ff-base: "Red Hat Display";
+}
+
 *,
 *::before,
 *::after {
@@ -8,9 +14,21 @@
   margin: 0;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: var(--clr-primary-300);
+  font-weight: var(--fw-regular);
+  font-family: var(--ff-base);
+
+  display: grid;
+  place-content: center;
+  padding: 1.5rem;
 }
 
 img,
